@@ -91,17 +91,17 @@ function weatherDetails(info){
        const {temp, feels_like , humidity} = info.main;
        
        if(id == 800) {
-           wIcon.src = 'weather-app-icons/clear.svg';
+           wIcon.src = 'clear.svg';
        }else if (id >= 200 && id <= 232 ){
-           wIcon.src = 'weather-app-icons/storm.svg';
+           wIcon.src = 'storm.svg';
        }else if(id >= 600 && id <= 622){
-           wIcon.src = 'weather-app-icons/snow.svg';
+           wIcon.src = 'snow.svg';
        }else if (id >= 701 && id <= 781) {
-           wIcon.src = 'weather-app-icons/haze.svg';
+           wIcon.src = 'haze.svg';
        }else if (id >= 801 && id <= 804){
-           wIcon.src = 'weather-app-icons/cloud.svg';
+           wIcon.src = 'cloud.svg';
        }else{
-           wIcon.src = 'weather-app-icons/rain.svg';
+           wIcon.src = 'rain.svg';
        }
        
        wrapper.querySelector('.temp .numb').innerText = temp;
