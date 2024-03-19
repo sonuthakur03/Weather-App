@@ -7,9 +7,6 @@ wIcon = wrapper.querySelector('.weather-part img');
 arrowBack = wrapper.querySelector('header i');
 
 
-let apikey = '554adc7426f9356b1177c054603c1db0'
-let api;
-
 
 /* adding evntlistner when user hits a value and enter and calling function requestApi with city name*/
 inputField.addEventListener('keyup', e => {
@@ -91,17 +88,17 @@ function weatherDetails(info){
        const {temp, feels_like , humidity} = info.main;
        
        if(id == 800) {
-           wIcon.src = 'clear.svg';
+           wIcon.src = 'assets/clear.svg';
        }else if (id >= 200 && id <= 232 ){
-           wIcon.src = 'storm.svg';
+           wIcon.src = 'assets/storm.svg';
        }else if(id >= 600 && id <= 622){
-           wIcon.src = 'snow.svg';
+           wIcon.src = 'assets/snow.svg';
        }else if (id >= 701 && id <= 781) {
-           wIcon.src = 'haze.svg';
+           wIcon.src = 'assets/haze.svg';
        }else if (id >= 801 && id <= 804){
-           wIcon.src = 'cloud.svg';
+           wIcon.src = 'assets/cloud.svg';
        }else{
-           wIcon.src = 'rain.svg';
+           wIcon.src = 'assets/rain.svg';
        }
        
        wrapper.querySelector('.temp .numb').innerText = temp;
