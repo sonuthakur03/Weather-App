@@ -7,9 +7,6 @@ wIcon = wrapper.querySelector('.weather-part img');
 arrowBack = wrapper.querySelector('header i');
 
 
-let api;
-
-
 /* adding evntlistner when user hits a value and enter and calling function requestApi with city name*/
 inputField.addEventListener('keyup', e => {
     if (e.key == 'Enter' && inputField.value !== '') {
