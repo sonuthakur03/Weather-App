@@ -48,7 +48,7 @@ function onError(error){
 function requestApi(city){
     infoTxt.innerText = 'Getting weather details......';
     infoTxt.classList.add('pending');
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}`;
     fetchData();
 }
 
